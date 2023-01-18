@@ -18,7 +18,7 @@
   --small-font-size: 0.81rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 780px) {
   :root {
     --h1-font-size: 4.5rem;
     --h2-font-size: 2rem;
@@ -102,7 +102,7 @@ img {
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .nav__menu {
     position: fixed;
     top: -100%;
@@ -212,8 +212,10 @@ img {
 .home__img {
   position: absolute;
   right: 0;
+  left: 60;
   bottom: 0;
-  width: 291px;
+  width: 85vw;
+  height: 82vh;
   z-index: var(--z-normal);
 }
 
@@ -239,7 +241,7 @@ img {
 }
 
 /*----- MEDIA QUERIES -----*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 780px) {
   body {
     margin: 0;
   }
