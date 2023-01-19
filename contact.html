@@ -39,24 +39,44 @@
         <main class="l-main bd-grid">
             <div class="home">
                 <div class="home__information">
-                    <span class="home__pressent anime-text">Welcome,</span>
-                    <h1 class="home__title anime-text">SRM Chess club</h1>
-                    <span class="home__skill anime-text">Kights of the square table</span>
+                    <span class="home__pressent anime-text">Contact us</span>
+                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                          <label class="required" for="name">Your name:</label><br />
+                          <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                          <span id="name_validation" class="error_message"></span>
+                        </div>
+                        <div class="row">
+                          <label class="required" for="email">Your email:</label><br />
+                          <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                          <span id="email_validation" class="error_message"></span>
+                        </div>
+                        <div class="row">
+                          <label class="required" for="message">Your message:</label><br />
+                          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                          <span id="message_validation" class="error_message"></span>
+                        </div>
+                          
+                          <input class = "home__button anime-text" id="submit_button" type="submit" value="Send email" />
+                      </form>
                     
-                    <div>
-                        <a href="#" class="home__button anime-text">Learn More</a>
-                    </div>
+                    <span class="home__skill anime-text"></span>
+                    
+
                 </div>
+
 
                 <div class="home__img">
                     <img src="assets/img/new_logo.png" alt="">
                 </div>
-                
+
+
                 <div class="home__social">
                     <ion-icon name="logo-linkedin" class="home__social-icon"></ion-icon>
                     <ion-icon name="logo-instagram" class="home__social-icon"></ion-icon>
                     <ion-icon name="logo-twitter" class="home__social-icon"></ion-icon>
                 </div>
+                
 
             </div>
 
